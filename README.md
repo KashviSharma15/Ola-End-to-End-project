@@ -1,8 +1,8 @@
 # Ola-End-to-End-project
 
-# 📊 Bookings Dataset (100,000 Rows)
+#  Bookings Dataset (100,000 Rows)
 
-## 📌 Overview
+## Overview
 This repository contains a large-scale bookings dataset with **100,000 records**, designed for **data analysis, visualization, and machine learning practice**.  
 The dataset simulates real-world booking information commonly used in industries such as travel, hospitality, e-commerce, and service platforms.
 
@@ -16,7 +16,7 @@ It is suitable for:
 
 ---
 
-## 📄 Dataset Description
+##  Dataset Description
 Each row in the dataset represents a **single booking transaction**.  
 The columns include structured information related to booking details, customer attributes, dates, pricing, and status.
 
@@ -24,7 +24,7 @@ The columns include structured information related to booking details, customer 
 
 ---
 
-## 🧾 Typical Features
+##  Typical Features
 The dataset may include fields such as:
 - Booking ID
 - Customer or User ID
@@ -38,7 +38,7 @@ The dataset may include fields such as:
 
 ---
 
-## 🧠 Possible Use Cases
+##  Possible Use Cases
 - 📈 Analyze booking trends over time  
 - ❌ Study cancellation patterns  
 - 💰 Revenue and pricing analysis  
@@ -47,21 +47,12 @@ The dataset may include fields such as:
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 This dataset works well with:
 - **Python** (Pandas, NumPy)
 - **Matplotlib / Seaborn** for visualization
 - **Scikit-learn** for ML models
 - **Excel / Power BI / Tableau** for dashboards
 
----
-
-## 🚀 Getting Started (Python Example)
-```python
-import pandas as pd
-
-df = pd.read_excel("Bookings-100000-Rows.xlsx")
-print(df.head())
-print(df.info())
 
 
