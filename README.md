@@ -20,7 +20,7 @@ It is suitable for:
 Each row in the dataset represents a **single booking transaction**.  
 The columns include structured information related to booking details, customer attributes, dates, pricing, and status.
 
-> ⚠️ Note: Column names and values may vary depending on how the dataset is used, but the structure follows common booking-system standards.
+>  Note: Column names and values may vary depending on how the dataset is used, but the structure follows common booking-system standards.
 
 ---
 
@@ -39,11 +39,11 @@ The dataset may include fields such as:
 ---
 
 ##  Possible Use Cases
-- 📈 Analyze booking trends over time  
-- ❌ Study cancellation patterns  
-- 💰 Revenue and pricing analysis  
-- 👥 Customer behavior analysis  
-- 🔮 Build predictive models (e.g., cancellation prediction)  
+-  Analyze booking trends over time  
+-  Study cancellation patterns  
+-  Revenue and pricing analysis  
+-  Customer behavior analysis  
+-  Build predictive models (e.g., cancellation prediction)  
 
 ---
 
