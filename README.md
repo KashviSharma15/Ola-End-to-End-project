@@ -23,7 +23,23 @@ The columns include structured information related to booking details, customer 
 >  Note: Column names and values may vary depending on how the dataset is used, but the structure follows common booking-system standards.
 
 ---
-
+## Dashboard Overview
+1. Overall
+- Ride Volume Over Time
+- Booking Status Breakdown
+2. Vehicle Type
+- Top 5 Vehicle Types by Ride Distance
+3. Revenue
+- Revenue by Payment Method
+- Top 5 Customers by Total Booking Value
+- Ride Distance Distribution Per Day
+4. Cancellation
+- Cancelled Rides Reasons (Customer)
+- cancelled Rides Reasons(Drivers)
+5. Ratings
+- Driver Ratings
+- Customer Ratings
+---
 ##  Typical Features
 The dataset may include fields such as:
 - Booking ID
