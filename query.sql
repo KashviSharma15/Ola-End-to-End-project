@@ -1,6 +1,5 @@
--- drop database Ola;
--- create database Ola;
--- use Ola;
+create database Ola;
+use Ola;
 -- 1. Retrieve all successful bookings:
 
 create view successful_bookings as
@@ -59,3 +58,26 @@ select sum(Booking_value) as total_successful_value from bookings where Booking_
 
 create view incomplete_rides as
 select Booking_id , Incomplete_Rides_reason from Bookings where Incomplete_Rides = "Yes";
+
+-- 11. Monthly revenue trend
+SELECT MONTH(date) AS month, SUM(booking_value) AS revenue
+FROM bookings WHERE booking_status = 'Success'
+GROUP BY MONTH(date);
+
+-- 12. Cancellation rate per vehicle type
+SELECT vehicle_type,
+  COUNT(CASE WHEN booking_status != 'Success' THEN 1 END) * 100.0 / COUNT(*) AS cancellation_rate
+FROM bookings GROUP BY vehicle_type;
+
+-- 13. Peak booking hours
+SELECT HOUR(time) AS hour, COUNT(*) AS total_bookings
+FROM bookings GROUP BY HOUR(time) ORDER BY total_bookings DESC;
+
+-- 14. Average driver rating per vehicle type
+SELECT vehicle_type, AVG(driver_ratings) AS avg_driver_rating
+FROM bookings WHERE booking_status = 'Success'
+GROUP BY vehicle_type;
+
+-- 15. Revenue lost due to cancellations
+SELECT SUM(booking_value) AS lost_revenue
+FROM bookings WHERE booking_status != 'Success';
